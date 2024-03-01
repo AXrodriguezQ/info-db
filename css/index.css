@@ -1,0 +1,149 @@
+/*------------nav-----------------*/
+.nav {
+    width: 100%;
+    height: 10vh;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(170, 170, 170);
+    z-index: 1;
+    top: 0;
+    position: fixed;
+}
+
+.nav-title {
+    padding-left: 10px;
+}
+
+.nav-items {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.nav-items > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+/*------------main-----------------*/
+
+.main {
+    margin: auto;
+    margin-top: 10vh;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-section {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-right: 5px solid green;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: all 300ms;
+}
+
+.main-section:hover {
+    background-color: rgb(252, 252, 252);
+}
+
+.body-main {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.img-main {
+    width: 40%;
+    height: auto;
+}
+
+.code {
+    width: 90%;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-main {
+    background-color: green;
+    transition: all 300ms;
+}
+
+.btn-main:hover {
+    background-color: rgb(0, 165, 0);
+}
+
+.btn-main > a {
+    color: white;
+    text-decoration: none;
+}
+
+/*------------footer-----------------*/
+
+.footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 30vh;
+}
+
+.footer > p {
+    margin-left: 50px;
+}
+
+.body-footer {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-me {
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.footer-list {
+    height: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+    list-style: none;
+}
+
+.footer-list > li > a {
+    text-decoration: none;
+    color: white;
+}
+

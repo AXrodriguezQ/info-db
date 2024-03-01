@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentacion DB</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <nav class="nav">
+        <h1 class="nav-title">Docs DB</h1>
+        <ul class="nav-items">
+            <li><a href="#mysql">SQL</a></li>
+            <li><a href="#mongo">Mongo DB</a></li>
+            <li><a href="https://alexdev-seven.vercel.app/" target="_blank">About Me</a></li>
+            <li><a href="https://github.com/AXrodriguezQ" target="_blank">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <h1 id="mysql" class="title-main"><a href="https://www.mysql.com/" target="_blank">MYSQL</a></h1>
+
+        <div class="main-section">
+            <h2 class="title-sub">VIEWS en MYSQL</h2>
+            <div class="body-main">
+                <img class="img-main" src="https://andresledo.es/wp-content/uploads/2023/09/crear-vista-mysql-768x671.png.webp" alt="">
+                <h3 class="title-sub-sub">¿Que es una vista en SQL?</h3>
+                <p>Las vistas en MySQL son una forma de simplificar y optimizar el acceso a los datos de una o más tablas. Una vista es una tabla virtual que se crea a partir de una consulta SELECT y que se almacena en la base de datos como un objeto.</p>
+                <div class="code">
+                    <p class="azul">CREATE</p> [ <p class="azul">OR REPLACE</p>] <p class="azul">VIEW</p> nombre_vista [lista_columnas] <p class="azul">AS</p> consulta;
+                </div>
+                <div>
+                    <button class="btn btn-main"><a href="https://www.w3schools.com/sql/sql_view.asp" target="_blank">Mas info</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-section">
+            <h2 class="title-sub">Procedimientos Almacenados</h2>
+            <div class="body-main">
+                <p>Un procedimiento almacenado es un conjunto de instrucciones que se pueden llamar desde otras consultas o desde otros procedimientos almacenados. Un procedimiento puede tomar argumentos de entrada y mostrar valores como resultados. Debes nombrar y almacenar un procedimiento en un conjunto de datos de BigQuery.</p>
+                <div class="code">
+                    <p class="azul">CREATE PROCEDURE</p> dataset_name.procedure_name() <n class="azul">BEGIN</n> <p class="rojo">-- statements here</p> <p class="azul">END</p>
+                </div>
+                <div>
+                    <button class="btn btn-main"><a href="https://www.w3schools.com/sql/sql_stored_procedures.asp" target="_blank">Mas info</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-section">
+            <h2 class="title-sub">SQL y NoSQL</h2>
+            <div class="body-main">
+                <img class="img-main" src="https://saludelectronica.com/wp-content/uploads/2022/05/imagen1.png" alt="">
+                <h3 class="title-sub-sub">¿Diferencias entre ellos?</h3>
+                <p>SQL significa Lenguaje de Consulta Estructurado y es un lenguaje para consultar datos estructurados. NoSQL es un sistema de base de datos más nuevo que no utiliza un lenguaje de consulta estándar pero emplea documentos JSON para el almacenamiento de datos.</p>
+                <div>
+                    <button class="btn btn-main"><a href="https://ilimit.com/blog/base-de-datos-sql-nosql/" target="_blank">Mas info</a></button>
+                </div>
+            </div>
+        </div>
+
+        <h1 id="mongo" class="title-main"><a href="https://www.mongodb.com/es/cloud/atlas/lp/try4?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_amers-co_ps-all_desktop_es-la_lead&utm_term=base%20de%20datos%20mongodb&utm_medium=cpc_paid_search&utm_ad=p&utm_ad_campaign_id=20745580680&adgroup=156970815322&cq_cmp=20745580680&gad_source=1&gclid=CjwKCAiAloavBhBOEiwAbtAJO_D6oZnTKi_k9TQ7Ga24eLAkF0yqfoOWqYnMU6n6uPQZDOk8fad37xoCnwkQAvD_BwE" target="_blank">MONGO DB</a></h1>
+
+        <div class="main-section">
+            <h2 class="title-sub">Listar en MONGODB</h2>
+            <div class="body-main">
+                <p>El comando MongoDB List Collections es una forma muy práctica de mostrar todas o algunas colecciones. El comando muestra todos los nombres y opciones de cada una de las listas, pudiendo condicionar el resultado en función de varios parámetros.</p>
+                <p>Para listar bases de datos en MongoDB puedes utilizar el comando</p>
+                <div class="code">
+                    <p class="azul">db.adminCommand</p> ( { listDatabases: 1 } )
+                </div>
+                <div>
+                    <button class="btn btn-main"><a href="https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/mongodb-list-databases/" target="_blank">Mas info</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-section">
+            <h2 class="title-sub">Actualizar en MONGODB</h2>
+            <div class="body-main">
+                <p>Para actualizar documentos en MongoDB, puedes usar los métodos update() y save(). El método update() desplaza los valores en un documento existente, mientras que save() reemplaza el documento existente con el que le pasamos por parámetro.</p>
+                <div class="code">
+                    <p class="azul">update()</p> y <p class="rojo">save()</p>
+                </div>
+                <div>
+                    <button class="btn btn-main"><a href="https://www.gpsos.es/2020/06/operaciones-update-crud-en-mongodb/" target="_blank">Mas info</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-section">
+            <h2 class="title-sub">Eliminar en MONGODB</h2>
+            <div class="body-main">
+                <p>La manera más común de eliminar datos en MongoDB es eliminar documentos individuales de una colección. Puede hacerlo mediante el método deleteOne() o deleteMany(). Es importante tener en cuenta que ambos métodos devuelven un objeto con las siguientes propiedades: deletedCount: la cantidad de documentos eliminados.</p>
+                <div class="code">
+                    <p class="azul">deleteOne()</p> y <p class="rojo">deleteMany()</p>
+                </div>
+                <div>
+                    <button class="btn btn-main"><a href="https://learn.microsoft.com/es-es/azure/cosmos-db/mongodb/tutorial-delete" target="_blank">Mas info</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-section">
+            <h2 class="title-sub">Insercion en MONGODB</h2>
+            <div class="body-main">
+                <p>Existen fundamentalmente dos métodos para insertar documentos: insertOne() : para insertar los documentos de uno en uno. insertMany() : para insertar varios documentos en un mismo comando.</p>
+                <div class="code">
+                    <p class="azul">insertOne()</p> y <p class="rojo">insertMany()</p>
+                </div>
+                <div>
+                    <button class="btn btn-main"><a href="https://www.adrformacion.com/knowledge/programacion/como_insertar_documentos_en_mongodb.html" target="_blank">Mas info</a></button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="body-footer">
+            <div class="footer-me">
+                <h1>About Me</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam. Ipsam, quaerat.</p>
+                <ul class="footer-list">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1>Docs DB</h1>
+            </div>
+        </div>
+        <p>Copyright &copy; 2021</p>
+    </footer>
+</body>
+</html>
