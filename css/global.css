@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Lato';
+    src: url(../fonts/Roboto-Bold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.azul {
+    color: #00E0E0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+    font-weight: normal;
+}
+
+h1 {
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.title-main {
+    font-family: 'Lato';
+    font-weight: bold;
+    font-size: 8rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+}

@@ -1,2 +1,2 @@
 # info-db
-Sitio de informacion basica sobre mysql y mongo
+ proyecto sencillo para mostrar documentacion basica de sql y mongo db
