@@ -75,6 +75,25 @@
     height: auto;
 }
 
+.contenedor-img {
+    margin: auto;
+    width: 90%;
+    background-color: rgb(192, 192, 192);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;   
+    padding: 15px;
+    gap: 10px; 
+    flex-wrap: wrap;
+}
+
+.contenedor-img img {
+    border-radius: 10px;
+    width: 250px;
+    height: 180px;
+}
+
 .code {
     width: 90%;
     padding: 20px;
